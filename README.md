@@ -29,8 +29,8 @@ SO that I don’t lose a show or movie.
 
 
 ## Deployment 
-[Heroku](https://infinite-cliffs-65236.herokuapp.com/)
-[Github](https://github.com/kacox1251/Streamer)
+[Heroku](https://infinite-cliffs-65236.herokuapp.com/) ||
+[Github](https://github.com/kacox1251/Streamer) ||
 [Presentation](https://docs.google.com/presentation/d/1UdXNs89kjtn8vqJ2SLocVmhPUWjGqlNWaOq3ye4Sc0A/edit?usp=sharing)
 
 
