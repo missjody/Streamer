@@ -1,6 +1,15 @@
 # Streamer
-
 ![Image of Logo](./public/assets/img/streamer-logo.png)
+
+## Todos to prepare for portfolio
+
+* fix hardcoded front page to an actual call
+* check to make sure login is being stored properly
+* check for any UI bugs and resolve
+* create section outlining what parts I worked on
+    * include before and after images
+* rename to a more appropriate title for what it actually does?
+* redeploy
 
 ## Description 
 Streamer is an application that allows users to create an account, 
