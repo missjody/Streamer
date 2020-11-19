@@ -8,14 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kacox1251/Streamer.git"
+    "url": "git+https://github.com/missjody/Streamer.git"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kacox1251/Streamer/issues"
-  },
-  "homepage": "https://github.com/kacox1251/Streamer#readme",
+  "homepage": "https://github.com/missjody/Streamer",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config.json": "0.0.4",
