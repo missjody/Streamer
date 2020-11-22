@@ -59,21 +59,25 @@ $(document).ready(function () {
   //       location.href("/profile");
   //     });
   // });
+
   $(".add-watchlist").click(function (event) {
     event.preventDefault();
     console.log("something happened")
     ///define data based on what is on the page
     let dataPass = {
-      api_id: $(".posterImage").attr("data-id"),
-      title: $(".title").text().trim(),
+      // api_id: $(".posterImage").attr("data-id"),
+      api_id: $(this).data("id"),
+      // title: $(this).data("title"),
+      // don't know if this one gets used -- should we be? yes, for clicking on individual ones 11/22
       media_type: $(".posterImage").attr("data-media"),
-      poster_path: $(".posterImage").attr("data-poster"),
+      // poster_path: $(".posterImage").attr("data-poster"),
+      poster_path: $(this).data("poster"),
       UserId: localStorage.getItem("user-id")
     };
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
-      title: dataPass.title,
+      // title: dataPass.title,
       media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,
       want_to_watch: true,
@@ -97,7 +101,7 @@ $(document).ready(function () {
     ///define data based on what is on the page
     let dataPass = {
       api_id: $(".posterImage").attr("data-id"),
-      title: $(".title").text().trim(),
+      // title: $(".title").text().trim(),
       media_type: $(".posterImage").attr("data-media"),
       poster_path: $(".posterImage").attr("data-poster"),
       UserId: localStorage.getItem("user-id")
@@ -105,7 +109,7 @@ $(document).ready(function () {
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
-      title: dataPass.title,
+      // title: dataPass.title,
       media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,
       want_to_watch: false,
@@ -129,7 +133,7 @@ $(document).ready(function () {
     ///define data based on what is on the page
     let dataPass = {
       api_id: $(".posterImage").attr("data-id"),
-      title: $(".title").text().trim(),
+      // title: $(".title").text().trim(),
       media_type: $(".posterImage").attr("data-media"),
       poster_path: $(".posterImage").attr("data-poster"),
       UserId: localStorage.getItem("user-id")
@@ -137,7 +141,7 @@ $(document).ready(function () {
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
-      title: dataPass.title,
+      // title: dataPass.title,
       media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,
       want_to_watch: false,

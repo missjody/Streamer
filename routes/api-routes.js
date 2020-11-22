@@ -73,30 +73,6 @@ module.exports = function (app) {
     })
   })
 
-  // app.get("/api/profile/:id/watch", function (req, res) {
-  //   db.Shows.findAndCountAll({
-  //     where: {
-  //       want_to_watch: false,
-  //       watching: true,
-  //       completed: false
-  //     }
-  //   }).then(function (watch) {
-  //     res.json(watch);
-  //   });
-  // })
-
-  // app.get("/api/profile/:id/completed", function (req, res) {
-  //   db.Shows.findAndCountAll({
-  //     where: {
-  //       want_to_watch: false,
-  //       watching: false,
-  //       completed: true
-  //     }
-  //   }).then(function (completed) {
-  //     res.json(completed)
-  //   })
-  // })
-
   // app.get for getting all movie information related to a user
   app.get("/api/profile/:id", function (req, res) {
     db.Shows.findAll({

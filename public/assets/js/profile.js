@@ -1,14 +1,32 @@
 
 $(document).ready(function () {
 
+  
+    const generateOwl = function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 4
+          },
+        }
+      });
 
   $(".carouselImage").on("click", function (event) {
     event.preventDefault();
 
-    console.log("this", this)
+    // console.log("this", this)
     //   let movie = $(this).data("movie");
-    //   console.log("this movie ", movie);
-    //   console.log("this tv ", $(this).data("tv"));
+      console.log("this movie ", movie);
+      console.log("this tv ", $(this).data("tv"));
 
 
     let id = $(this).data("id");
@@ -25,24 +43,6 @@ $(document).ready(function () {
     window.location.pathname = `/selected/${type}/${id}`;
   };
 
-
-  const generateOwl = function () {
-    $('.owl-carousel').owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1
-        },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 4
-        },
-      }
-    });
 
   };
 

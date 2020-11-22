@@ -1,8 +1,8 @@
 <div class="container">
   <div class="row">
     <div class="darkGreen z-depth-5 col s9">
+      {{!-- <h3 class="title" data-title={{title}}> {{title}} </h3> --}}
       <h3 class="title"> {{title}} </h3>
-
     </div>
   </div>
 
@@ -13,7 +13,8 @@
     <div class="col s4" id="poster-move">
 
       <div class="darkGreen z-depth-5 row">
-        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{poster_path}}" class="carouselImage posterImage" data-id={{api_id}} data-poster={{poster_path}}>
+        <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2{{poster_path}}" class="carouselImage posterImage"
+          {{!-- data-id={{api_id}} data-poster={{poster_path}}> --}}>
       </div>
 
     </div>
@@ -35,15 +36,20 @@
 
       <div class="darkGreen z-depth-5 row">
 
-        <button class="btn-floating btn-large waves-effect waves-light btn add-watchlist">
+        <button class="btn-floating btn-large waves-effect waves-light btn add-watchlist" data-id={{api_id}}
+          data-poster={{poster_path}}>
           <p>Add To<br>
             Want to Watch<br>List</p>
         </button>
-        <button class="btn-floating btn-large waves-effect waves-light btn mark-start">
-          <p>Add To<br> 
+
+        {{!-- poster path is not being passed from these two buttons 11/22 --}}
+        <button class="btn-floating btn-large waves-effect waves-light btn mark-start" data-id={{api_id}}
+          data-poster={{poster_path}}>
+          <p>Add To<br>
             Watching<br>List</p>
         </button>
-        <button class="btn-floating btn-large waves-effect waves-light btn mark-complete">
+        <button class="btn-floating btn-large waves-effect waves-light btn mark-complete" data-id={{api_id}}
+          data-poster={{poster_path}}>
           <p>Add To<br>
             Completed<br>List</p>
         </button>
