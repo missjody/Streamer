@@ -127,52 +127,23 @@ module.exports = function (app) {
         "vote_average": 7.6,
         "overview": "An edge-of-your-seat view into the lives of everyday heroes committed to one of America's noblest professions. For the firefighters, rescue squad and paramedics of Chicago Firehouse 51, no occupation is more stressful or dangerous, yet so rewarding and exhilarating. These courageous men and women are among the elite who forge headfirst into danger when everyone else is running the other way and whose actions make the difference between life and death.",
         "poster_path": "/g9aoiYLbE3IrDiMms5fU4lv6BR4.jpg"
-      },
-      {
-        "name": "Pokémon",
-        "api_id": 60572,
-        "vote_average": 6.7,
-        "overview": "Join Ash Ketchum, accompanied by his partner Pikachu, as he travels through many regions, meets new friends and faces new challenges on his quest to become a Pokémon Master.",
-        "poster_path": "/2pcTUs20ysCdA6DZclaPmGXD6ph.jpg"
-      },
-      {
-        "name": "Strike Back",
-        "api_id": 32573,
-        "vote_average": 7.4,
-        "overview": "The series follows John Porter, a former British Special Forces soldier, who is drafted back into service by Section 20, a fictional branch of the Secret Intelligence Service.",
-        "poster_path": "/1SLMVuZP3gjcsa4wKELg2JXSMy2.jpg"
-      },
-      {
-        "name": "DC's Legends of Tomorrow",
-        "api_id": 62643,
-        "vote_average": 6.5,
-        "overview": "When heroes alone are not enough ... the world needs legends. Having seen the future, one he will desperately try to prevent from happening, time-traveling rogue Rip Hunter is tasked with assembling a disparate group of both heroes and villains to confront an unstoppable threat — one in which not only is the planet at stake, but all of time itself. Can this ragtag team defeat an immortal threat unlike anything they have ever known?",
-        "poster_path": "/yJ3xE11IDIe29LJsSbhzwt5Oxtd.jpg"
-      },
-      {
-        "name": "The Voice",
-        "api_id": 37678,
-        "vote_average": 5.3,
-        "overview": "The strongest vocalists from across the United states compete in a blockbusters vocal competition, the winner becomes “The Voice.” The show's innovative format features four stages of competition: the blind auditions, the battle rounds, the knockouts and, finally, the live performance shows.",
-        "poster_path": "/5bAzxOZRliSNyuGj3xdVgBLaPup.jpg"
       }
-
     ];
 
     let hardcodeMovies = [
       {
-        "poster_path": "/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg",
-        "id": 278,
-        "title": "The Shawshank Redemption",
-        "vote_average": 8.7,
-        "overview": "Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.",
+        "poster_path": "/k68nPLbIST6NP96JmTxmZijEvCA.jpg",
+        "id": 577922,
+        "title": "Tenet",
+        "vote_average": 7.5,
+        "overview": "Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
       },
       {
-        "poster_path": "/d4KNaTrltq6bpkFS01pYtyXa09m.jpg",
-        "id": 238,
-        "title": "The Godfather",
-        "vote_average": 8.7,
-        "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.",
+        "poster_path": "/8QKWOuEZk77ey7oA1Ul3e3xm4KY.jpg",
+        "id": 654028,
+        "title": "The Christmas Chronicles: Part Two",
+        "vote_average": 7.6,
+        "overview": "Kate Pierce is reluctantly spending Christmas with her mom’s new boyfriend and his son Jack. But when the North Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly pulled into a new adventure with Santa Claus.",
       },
       {
         "poster_path": "/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
@@ -180,20 +151,6 @@ module.exports = function (app) {
         "title": "Parasite",
         "vote_average": 8.6,
         "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
-      },
-      {
-        "poster_path": "/bVq65huQ8vHDd1a4Z37QtuyEvpA.jpg",
-        "id": 240,
-        "title": "The Godfather: Part II",
-        "vote_average": 8.5,
-        "overview": "In the continuing saga of the Corleone crime family, a young Vito Corleone grows up in Sicily and in 1910s New York. In the 1950s, Michael Corleone attempts to expand the family business into Las Vegas, Hollywood and Cuba.",
-      },
-      {
-        "poster_path": "/xq1Ugd62d23K2knRUx6xxuALTZB.jpg",
-        "id": 372058,
-        "title": "Your Name.",
-        "vote_average": 8.5,
-        "overview": "High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.",
       },
       {
         "poster_path": "/oRvMaJOmapypFUcQqpgHMZA6qL9.jpg",
@@ -222,48 +179,6 @@ module.exports = function (app) {
         "title": "The Dark Knight",
         "vote_average": 8.4,
         "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
-      },
-      {
-        "poster_path": "/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg",
-        "id": 13,
-        "title": "Forrest Gump",
-        "vote_average": 8.4,
-        "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events—in each case, far exceeding what anyone imagined he could do. But despite all he has achieved, his one true love eludes him.",
-      },
-      {
-        "poster_path": "/v6xrz4fr92KY1oNC3HsEvrsvR1n.jpg",
-        "id": 346,
-        "title": "Seven Samurai",
-        "vote_average": 8.4,
-        "overview": "A samurai answers a village's request for protection after he falls on hard times. The town needs protection from bandits, so the samurai gathers six others to help him teach the people how to defend themselves, and the villagers provide the soldiers with food. A giant battle occurs when 40 bandits attack the village.",
-      },
-      {
-        "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
-        "id": 122,
-        "title": "The Lord of the Rings: The Return of the King",
-        "vote_average": 8.4,
-        "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam take the ring closer to the heart of Mordor, the dark lord's realm.",
-      },
-      {
-        "poster_path": "/x733R4ISI0RbKeHhVkXdTMFmTFr.jpg",
-        "id": 311,
-        "title": "Once Upon a Time in America",
-        "vote_average": 8.4,
-        "overview": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
-      },
-      {
-        "id": 429,
-        "vote_average": 8.4,
-        "title": "The Good, the Bad and the Ugly",
-        "overview": "While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
-        "poster_path": "/wfPHdfofBD5PN96dV96a51B3Ja2.jpg"
-      },
-      {
-        "poster_path": "/3W0v956XxSG5xgm7LB6qu8ExYJ2.jpg",
-        "id": 389,
-        "title": "12 Angry Men",
-        "vote_average": 8.4,
-        "overview": "The defense and the prosecution have rested and the jury is filing into the jury room to decide if a young Spanish-American is guilty or innocent of murdering his father. What begins as an open and shut case soon becomes a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, and each other.",
       },
       {
         "poster_path": "/81d8oyEFgj7FlxJqSDXWr8JH8kV.jpg",
@@ -367,7 +282,8 @@ module.exports = function (app) {
                 summary: results[i].overview,
                 poster_path: results[i].poster_path,
                 title: results[i].title || results[i].name,
-                rating: results[i].vote_average
+                rating: results[i].vote_average,
+                type: results[i].media_type
               }
             );
           }
@@ -384,25 +300,7 @@ module.exports = function (app) {
       res.render("login");
     }
   });
-  ////////////////////////////////////////////////////////////
 
-  // DONT DELETE YET PLEASE//////////////////////////////
-  // app.get("/api/selected/", function (req, res) {
-  //   if (req.user) {
-  //     const queryURL = `https://api.themoviedb.org/3/search/multi?api_key=${req.params.typ}&language=en-US&query=${title}&page=1&include_adult=false&region=US`
-  //     axios
-  //       .get(queryURL)
-  //       .then(function (searchData) {
-  //         console.log("searchData", searchData);
-  //       })
-
-  //     // res.render("selected", req.body[0]);
-  //   } else {
-  //     res.render("index");
-  //   }
-  // });
-  // })
-  ////////////////////////////////////////////////////////////
 
   // isAuthenticated,
   app.get("/signup", function (req, res) {
@@ -434,7 +332,7 @@ module.exports = function (app) {
             // selected: {
             api_id: data.data.id,
             summary: data.data.overview,
-            media_type: data.data.media_type,
+            airDate: data.data.first_air_date,
             poster_path: data.data.poster_path,
             title: data.data.title || data.data.name,
             rating: data.data.vote_average

@@ -32,7 +32,7 @@ $(document).ready(function () {
       .then(function (data) {
         console.log("Did we did it?", data)
         localStorage.setItem("user-id", data.id);
-        window.location = (`/profile/${data.id}`); //like this?
+        window.location = (`/profile/${data.id}`); 
         // If there's an error, log the error
       })
       .catch(function (err) {

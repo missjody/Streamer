@@ -7,42 +7,6 @@ const axios = require("axios")
 module.exports = function (app) {
 
 
-
-  // DON"T DELETE YET PLEASE//////////////////////////////
-  // app.get info from movie db for specific title info
-  // app.post("/api/selected", function (req, res) {
-  //   console.log("did we get to the backend selected?");
-  //   // console.log(req.body.title);
-
-  //   const queryURL = `https://api.themoviedb.org/3/${req.body.type}/${req.body.id}?api_key=${process.env.API_KEY}&language=en-US`;
-  //   console.log("queryURL", queryURL)
-  //   axios
-  //     .get(queryURL)
-  //     .then(function (data) {
-  //       console.log(data.data.id, "THIS IS THE DATA");
-  //       let dataPass = [{
-  //         // selected: {
-  //         api_id: data.data.id,
-  //         summary: data.data.overview,
-  //         poster: data.data.poster_path,
-  //         title: data.data.title || data.data.name,
-  //         rating: data.data.vote_average
-  //         // }
-  //       }]
-
-  //       res.json(dataPass); // then the object for handlebars
-  //     })
-  //     .catch(function (e) {
-  //       res.json(e)
-  //     })
-  // })
-  ////////////////////////////////////////////////////////////
-
-  // When coming from search we will need a req.body.title... but
-  // will it be connected to search or to selected? 
-  // I believe we'll pass this info from the front end rather than
-  // grabbing it in back end
-
   // route for search functionality
   app.get("/api/:title", function (req, res) {
     const title = req.params.title
@@ -58,8 +22,6 @@ module.exports = function (app) {
         res.json(err)
       })
   })
-
-  //   //////////////////////////////////////////////////////////////////////////////////////////////
 
   app.get("/api/profile/:id/all", function (req, res) {
     db.Shows.findAndCountAll({

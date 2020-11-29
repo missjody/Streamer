@@ -1,22 +1,10 @@
-// console.log("signup js here");
-
 $(document).ready(function () {
   console.log("signup doc ready");
 
   // Getting references to our form and input
-  // var signUpForm = $("#signUpForm");
   var userNameInput = $("#signup-username")
   var emailInput = $("#signup-email");
   var passwordInput = $("#signup-pwd");
-
-  // When the signup button is clicked, we validate the email and password are not blank
-  // $("#signup-btn").click(function (event) {
-  //   event.preventDefault();
-  //   // $("#signUpForm").submit();
-  //   console.log("Did it do it?");
-  // }).then(function () {
-  //   data.redirect("/profile");
-  // })
 
   $("#signUpForm").on("submit", function (event) {
     event.preventDefault();

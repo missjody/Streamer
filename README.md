@@ -3,13 +3,19 @@
 
 ## Todos to prepare for portfolio
 
+* fix selected buttons to pass correct info
+* fix carousel links to pass correct info
+* possible call for index instead of being hardcoded, save for later
+    * https://api.themoviedb.org/3/trending/all/day?api_key=
+    * sort the popular into movie and tv carousels
+
+* I broke adding to watch/watching/watched again
+
 * fix hardcoded front page to an actual call
-* check to make sure login is being stored properly
 * check for any UI bugs and resolve
 * create section outlining what parts I worked on
     * include before and after images
 * rename to a more appropriate title for what it actually does?
-* redeploy
 
 ## Description 
 Streamer is an application that allows users to create an account, 
