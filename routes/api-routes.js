@@ -55,7 +55,7 @@ module.exports = function (app) {
     if (req.user) {
     db.Shows.create({
         api_id: req.body.api_id,
-        type: req.body.type,
+        media_type: req.body.media_type,
         poster_path: req.body.poster_path,
         want_to_watch: req.body.want_to_watch,
         watching: req.body.watching,
