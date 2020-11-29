@@ -46,7 +46,7 @@ I originally created the UI for this page, dynamically updating using Handlebars
 
 * Selected UI
 
-With how I sat the handlebars up, this page can be used both for an individual title or for displaying a list of titles based on your search term. Originally, on each click of the buttons a new entry would be created. I now have correctly sat up to update if the entry is preexisting, however I feel like the syntax is incorrect still even if working.
+With how I sat the handlebars up, this page can be used both for an individual title or for displaying a list of titles based on your search term. Originally, on each click of the buttons a new entry would be created. I now have correctly sat up to update if the entry is preexisting, however I feel like the syntax is incorrect still even if working. When a title is added currently a popup alert confirms that is have been added -- change to a different presentation.
 
 * Overall
 
