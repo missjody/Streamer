@@ -9,12 +9,14 @@ $(document).ready(function () {
     
     let dataPass = {
       api_id: $(this).data("id"),
+      media_type: $(this).data("type"),
       poster_path: $(this).data("poster"),
       UserId: localStorage.getItem("user-id")
     };
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
+      media_type: dataPass.media_type,
       // title: dataPass.title,
       // media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,
@@ -45,6 +47,7 @@ $(document).ready(function () {
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
+      media_type: dataPass.media_type,
       // title: dataPass.title,
       // media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,
@@ -75,6 +78,7 @@ $(document).ready(function () {
     console.log("add " + JSON.stringify(dataPass))
     $.post("/api/watchlist", {
       api_id: dataPass.api_id,
+      media_type: dataPass.media_type,
       // title: dataPass.title,
       // media_type: dataPass.media_type,
       poster_path: dataPass.poster_path,

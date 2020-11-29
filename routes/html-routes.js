@@ -17,10 +17,8 @@ module.exports = function (app) {
     // console.log("if not logged in go to index")
     let hardcodeTV = [
       {
-        "name": "The Simpsons",
         "api_id": 456,
-        "vote_average": 7.2,
-        "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+        "media_type":"tv",
         "poster_path": "/qcr9bBY6MVeLzriKCmJOv1562uY.jpg"
       },
       {
@@ -28,6 +26,7 @@ module.exports = function (app) {
         "api_id": 4194,
         "vote_average": 7.8,
         "overview": "Yoda, Obi-Wan Kenobi, Anakin Skywalker, Mace Windu and other Jedi Knights lead the Grand Army of the Republic against the droid army of the Separatists.",
+        "media_type":"tv",
         "poster_path": "/p6s2svEHHLsQ1TOw4Si54c1dD5L.jpg"
       },
       {
@@ -35,6 +34,7 @@ module.exports = function (app) {
         "api_id": 60735,
         "vote_average": 6.8,
         "overview": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
+        "media_type":"tv",
         "poster_path": "/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg"
       },
       {
@@ -42,6 +42,7 @@ module.exports = function (app) {
         "api_id": 1402,
         "vote_average": 7.3,
         "overview": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+        "media_type":"tv",
         "poster_path": "/5l10EjdgPxu8Gbl5Ww6SWkVQH6T.jpg"
       },
       {
@@ -49,6 +50,7 @@ module.exports = function (app) {
         "api_id": 2734,
         "vote_average": 6.6,
         "overview": "In the criminal justice system, sexually-based offenses are considered especially heinous. In New York City, the dedicated detectives who investigate these vicious felonies are members of an elite squad known as the Special Victims Unit. These are their stories.",
+        "media_type":"tv",
         "poster_path": "/6t6r1VGQTTQecN4V0sZeqsmdU9g.jpg"
       },
       {
@@ -56,6 +58,7 @@ module.exports = function (app) {
         "api_id": 60059,
         "vote_average": 8.1,
         "overview": "Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and, often, against Jimmy, is “fixer” Mike Ehrmantraut. The series tracks Jimmy’s transformation into Saul Goodman, the man who puts “criminal” in “criminal lawyer\".",
+        "media_type":"tv",
         "poster_path": "/cU0kAjGjA6d2XjBzJMUIEVKiGDb.jpg"
       },
       {
@@ -63,6 +66,7 @@ module.exports = function (app) {
         "api_id": 57243,
         "vote_average": 7,
         "overview": "The Doctor is a Time Lord: a 900 year old alien with 2 hearts, part of a gifted civilization who mastered time travel. The Doctor saves planets for a living—more of a hobby actually, and the Doctor's very, very good at it.",
+        "media_type":"tv",
         "poster_path": "/cDDb7WA2i7cENhkEEjXEDrXGyNL.jpg"
       },
       {
@@ -70,6 +74,7 @@ module.exports = function (app) {
         "api_id": 1416,
         "vote_average": 6.6,
         "overview": "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+        "media_type":"tv",
         "poster_path": "/jnsvc7gCKocXnrTXF6p03cICTWb.jpg"
       },
       {
@@ -77,6 +82,7 @@ module.exports = function (app) {
         "api_id": 56570,
         "vote_average": 7.4,
         "overview": "The story of Claire Randall, a married combat nurse from 1945 who is mysteriously swept back in time to 1743, where she is immediately thrown into an unknown world where her life is threatened. When she is forced to marry Jamie, a chivalrous and romantic young Scottish warrior, a passionate affair is ignited that tears Claire's heart between two vastly different men in two irreconcilable lives.",
+        "media_type":"tv",
         "poster_path": "/70PRIpG1phOyphejeLwi0K8zdJo.jpg"
       },
       {
@@ -84,6 +90,7 @@ module.exports = function (app) {
         "api_id": 85949,
         "vote_average": 7.6,
         "overview": "Set twenty years after the events of Star Trek Nemesis, we follow the now-retired Admiral Picard into the next chapter of his life.",
+        "media_type":"tv",
         "poster_path": "/nIlAKIrLKxOeoEnc0Urb65yNCp.jpg"
       },
       {
@@ -91,6 +98,7 @@ module.exports = function (app) {
         "api_id": 69050,
         "vote_average": 7.5,
         "overview": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+        "media_type":"tv",
         "poster_path": "/4X7o1ssOEvp4BFLim1AZmPNcYbU.jpg"
       },
       {
@@ -98,6 +106,7 @@ module.exports = function (app) {
         "api_id": 32798,
         "vote_average": 6.8,
         "overview": "Steve McGarrett returns home to Oahu, in order to find his father's killer. The governor offers him the chance to run his own task force (Five-0). Steve's team is joined by Chin Ho Kelly, Danny \"Danno\" Williams, and Kono Kalakaua.",
+        "media_type":"tv",
         "poster_path": "/sIdCKlmM2nU4akIvFQaAIiU8YES.jpg"
       },
       {
@@ -105,6 +114,7 @@ module.exports = function (app) {
         "api_id": 1407,
         "vote_average": 7.4,
         "overview": "CIA officer Carrie Mathison is tops in her field despite being bipolar, which makes her volatile and unpredictable. With the help of her long-time mentor Saul Berenson, Carrie fearlessly risks everything, including her personal well-being and even sanity, at every turn.",
+        "media_type":"tv",
         "poster_path": "/6GAvS2e6VIRsms9FpVt33PsCoEW.jpg"
       },
       {
@@ -112,6 +122,7 @@ module.exports = function (app) {
         "api_id": 48891,
         "vote_average": 7.8,
         "overview": "A single-camera ensemble comedy following the lives of an eclectic group of detectives in a New York precinct, including one slacker who is forced to shape up when he gets a new boss.",
+        "media_type":"tv",
         "poster_path": "/dzj0oLZWe3qMgK4jlgdKWPVxxIx.jpg"
       },
       {
@@ -119,6 +130,7 @@ module.exports = function (app) {
         "api_id": 84661,
         "vote_average": 8.4,
         "overview": "When an insidious supernatural force edges its way into a seemingly straightforward investigation into the gruesome murder of a young boy, it leads a seasoned cop and an unorthodox investigator to question everything they believe in.",
+        "media_type":"tv",
         "poster_path": "/aMiPwPQjQI1EZN3xP2V0sSU37dc.jpg"
       },
       {
@@ -126,6 +138,7 @@ module.exports = function (app) {
         "api_id": 44006,
         "vote_average": 7.6,
         "overview": "An edge-of-your-seat view into the lives of everyday heroes committed to one of America's noblest professions. For the firefighters, rescue squad and paramedics of Chicago Firehouse 51, no occupation is more stressful or dangerous, yet so rewarding and exhilarating. These courageous men and women are among the elite who forge headfirst into danger when everyone else is running the other way and whose actions make the difference between life and death.",
+        "media_type":"tv",
         "poster_path": "/g9aoiYLbE3IrDiMms5fU4lv6BR4.jpg"
       }
     ];
@@ -136,6 +149,7 @@ module.exports = function (app) {
         "id": 577922,
         "title": "Tenet",
         "vote_average": 7.5,
+        "media_type": "movie",
         "overview": "Armed with only one word - Tenet - and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
       },
       {
@@ -143,6 +157,7 @@ module.exports = function (app) {
         "id": 654028,
         "title": "The Christmas Chronicles: Part Two",
         "vote_average": 7.6,
+        "media_type": "movie",
         "overview": "Kate Pierce is reluctantly spending Christmas with her mom’s new boyfriend and his son Jack. But when the North Pole and Christmas are threatened to be destroyed, Kate and Jack are unexpectedly pulled into a new adventure with Santa Claus.",
       },
       {
@@ -150,6 +165,7 @@ module.exports = function (app) {
         "id": 496243,
         "title": "Parasite",
         "vote_average": 8.6,
+        "media_type": "movie",
         "overview": "All unemployed, Ki-taek's family takes peculiar interest in the wealthy and glamorous Parks for their livelihood until they get entangled in an unexpected incident.",
       },
       {
@@ -157,6 +173,7 @@ module.exports = function (app) {
         "id": 129,
         "title": "Spirited Away",
         "vote_average": 8.5,
+        "media_type": "movie",
         "overview": "A young girl, Chihiro, becomes trapped in a strange new world of spirits. When her parents undergo a mysterious transformation, she must call upon the courage she never knew she had to free her family.",
       },
       {
@@ -164,6 +181,7 @@ module.exports = function (app) {
         "id": 497,
         "title": "The Green Mile",
         "vote_average": 8.5,
+        "media_type": "movie",
         "overview": "A supernatural tale set on death row in a Southern prison, where gentle giant John Coffey possesses the mysterious power to heal people's ailments. When the cell block's head guard, Paul Edgecomb, recognizes Coffey's miraculous gift, he tries desperately to help stave off the condemned man's execution.",
       },
       {
@@ -171,6 +189,7 @@ module.exports = function (app) {
         "id": 680,
         "title": "Pulp Fiction",
         "vote_average": 8.5,
+        "media_type": "movie",
         "overview": "A burger-loving hit man, his philosophical partner, a drug-addled gangster's moll and a washed-up boxer converge in this sprawling, comedic crime caper. Their adventures unfurl in three stories that ingeniously trip back and forth in time.",
       },
       {
@@ -178,6 +197,7 @@ module.exports = function (app) {
         "id": 155,
         "title": "The Dark Knight",
         "vote_average": 8.4,
+        "media_type": "movie",
         "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker.",
       },
       {
@@ -185,6 +205,7 @@ module.exports = function (app) {
         "id": 539,
         "title": "Psycho",
         "vote_average": 8.4,
+        "media_type": "movie",
         "overview": "When larcenous real estate clerk Marion Crane goes on the lam with a wad of cash and hopes of starting a new life, she ends up at the notorious Bates Motel, where manager Norman Bates cares for his housebound mother. The place seems quirky, but fine… until Marion decides to take a shower.",
       }
     ];
@@ -222,14 +243,15 @@ module.exports = function (app) {
             let completed = [];
             for (let i = 0; i < shows.length; i++) {
               let show = shows[i].dataValues;
-              let title = show.title;
-              title = title.replace(/\s+/g, '%20');
+              console.log("SHOW", show)
+              // let title = show.title;
+              // title = title.replace(/\s+/g, '%20');
               // console.log("title",title)
-              show.title = title;
+              // show.title = title;
     
               if (show.want_to_watch && !show.watching && !show.completed) {
                 want_to_watch.push(show);
-                // console.log("want to watch", want_to_watch);
+                console.log("want to watch", want_to_watch);
               } else if (!show.want_to_watch && show.watching && !show.completed) {
                 watching.push(show);
                 // console.log("watching",watching);
@@ -249,17 +271,6 @@ module.exports = function (app) {
       res.render("login");
     }
   });
-
-  // DONT DELETE YET PLEASE//////////////////////////////
-  // Selected Movie / TV Page:
-  // on click for search redirects to selected with movie title
-  // app.get("/selected/:title", isAuthenticated, function (req, res) {
-  //   if (req.user) {
-  //     res.render("selected");
-  //   } else {
-  //     res.render("index");
-  //   }
-  // });
 
   app.get("/selected/:title", isAuthenticated, function (req, res) {
     if (req.user) {
@@ -332,7 +343,7 @@ module.exports = function (app) {
             // selected: {
             api_id: data.data.id,
             summary: data.data.overview,
-            airDate: data.data.first_air_date,
+            type: req.params.type,
             poster_path: data.data.poster_path,
             title: data.data.title || data.data.name,
             rating: data.data.vote_average

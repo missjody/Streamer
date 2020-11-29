@@ -48,28 +48,15 @@ module.exports = function (app) {
       res.json(result);
     });
   });
-  // }).then(function (//) {
-  // for each in res do a call using api_id for poster image
-  // create an array of links for front end to drill into
-  // }).then(function (favorites) {
-
-  // loop through favorites and grab movie api_id
-  // axios call to grab the poster_path
-  // put all poster_paths into an array named posterArray
-  // }).then(function (favorites, posterArray) {
-
-  // res.json(favorites, posterArray)
-  // });
-
-  // DONT DELETE YET PLEASE //////////////////////////////
+  
+  ////
   // route for adding movies and shows to our database
   app.post("/api/watchlist", function (req, res) {
     if (req.user) {
     db.Shows.create({
         api_id: req.body.api_id,
-        title: req.body.title,
+        type: req.body.type,
         poster_path: req.body.poster_path,
-        media_type: req.body.media_type,
         want_to_watch: req.body.want_to_watch,
         watching: req.body.watching,
         completed: req.body.completed,

@@ -39,19 +39,19 @@
       <div class="darkGreen z-depth-5 row">
 
         <button class="btn-floating btn-large waves-effect waves-light btn add-watchlist" data-id={{api_id}}
-          data-poster={{poster_path}}>
+          data-poster={{poster_path}} data-type={{type}}>
           <p>Add To<br>
             Want to Watch<br>List</p>
         </button>
 
         {{!-- poster path is not being passed from these two buttons 11/22 --}}
         <button class="btn-floating btn-large waves-effect waves-light btn mark-start" data-id={{api_id}}
-          data-poster={{poster_path}}>
+          data-poster={{poster_path}} data-type={{type}}>
           <p>Add To<br>
             Watching<br>List</p>
         </button>
         <button class="btn-floating btn-large waves-effect waves-light btn mark-complete" data-id={{api_id}}
-          data-poster={{poster_path}}>
+          data-poster={{poster_path}} data-type={{type}}>
           <p>Add To<br>
             Completed<br>List</p>
         </button>
