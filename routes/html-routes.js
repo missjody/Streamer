@@ -10,11 +10,6 @@ module.exports = function (app) {
   // route for login or sign up page
   // isAuthenticated
   app.get("/", function (req, res) {
-    // if (req.user) {
-    //   console.log("if logged in go to profile")
-    //   res.render("profile")
-    // }
-    // console.log("if not logged in go to index")
     let hardcodeTV = [
       {
         "api_id": 456,
@@ -235,29 +230,22 @@ module.exports = function (app) {
                 id: req.user.id
             }
         }).then(function(user) {
-            // window.localStorage.setItem("UserId", req.user.id);
-            // console.log("user", user[0].dataValues);
             let username = user[0].dataValues.username;
             let want_to_watch= [];
             let watching = [];
             let completed = [];
             for (let i = 0; i < shows.length; i++) {
               let show = shows[i].dataValues;
-              // console.log("SHOW", show)
-              // let title = show.title;
-              // title = title.replace(/\s+/g, '%20');
-              // console.log("title",title)
-              // show.title = title;
     
               if (show.want_to_watch && !show.watching && !show.completed) {
                 want_to_watch.push(show);
                 console.log("want to watch", want_to_watch);
               } else if (!show.want_to_watch && show.watching && !show.completed) {
                 watching.push(show);
-                // console.log("watching",watching);
+          
               } else if (!show.want_to_watch && !show.watching && show.completed) {
                 completed.push(show);
-                // console.log("completed", completed);
+                
               }
             }
             res.render("profile", { username, want_to_watch, watching, completed });
@@ -275,12 +263,11 @@ module.exports = function (app) {
   app.get("/selected/:title", isAuthenticated, function (req, res) {
     if (req.user) {
       const queryURL = `https://api.themoviedb.org/3/search/multi?api_key=${process.env.API_KEY}&language=en-US&query=${req.params.title}&page=1&include_adult=false&region=US`
-      // console.log("search url: ", queryURL);
+  
       axios
         .get(queryURL)
         .then(function (data) {
-          // console.log(data, "SEARCH DATA");
-          // console.log("searchData results", data.data.results);
+
 
           let results = data.data.results;
           console.log(results, "RESULTS")
@@ -315,16 +302,10 @@ module.exports = function (app) {
 
   // isAuthenticated,
   app.get("/signup", function (req, res) {
-    // if (req.user) {
-    //   res.render("profile");
-    // }
     res.render("signup");
   })
-  // isAuthenticated,
+
   app.get("/login", function (req, res) {
-    // if (req.user) {
-    //   res.redirect("profile")
-    // }
     res.render("login")
   })
 
@@ -336,21 +317,20 @@ module.exports = function (app) {
     axios
       .get(queryURL)
       .then(function (data) {
-        // console.log(data.data.id, "THIS IS THE DATA");
-        // console.log("this is the data",data);
+
         let dataPass = {
           selected: [{
-            // selected: {
+
             api_id: data.data.id,
             summary: data.data.overview,
             type: req.params.type,
             poster_path: data.data.poster_path,
             title: data.data.title || data.data.name,
             rating: data.data.vote_average
-            // }
+
           }]
         }
-        // console.log(dataPass, "DATA PASS ARRAY OBJECT");
+
 
         res.render("selected", dataPass); // then the object for handlebars
       }).catch(function (e) {
