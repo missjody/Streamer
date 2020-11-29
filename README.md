@@ -1,7 +1,12 @@
 # Streamer
 ![Image of Logo](./public/assets/img/streamer-logo.png)
 
-## Description 
+## Intro
+
+Link to application: https://infinite-bayou-97369.herokuapp.com/
+UserName: test@test.com 
+Password: test
+
 Streamer was originally a group project worked on while going through the University of Denver's Full Stack MERN program. The original concept was that this application would help you keep track of where you are in a series, as well as being able to see where to watch it online -- hense the name Streamer. 
 
 This application allows users to create an account and keep track of what titles they are watching, want to watch, and have already completed. 
