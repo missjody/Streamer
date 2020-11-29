@@ -243,7 +243,7 @@ module.exports = function (app) {
             let completed = [];
             for (let i = 0; i < shows.length; i++) {
               let show = shows[i].dataValues;
-              console.log("SHOW", show)
+              // console.log("SHOW", show)
               // let title = show.title;
               // title = title.replace(/\s+/g, '%20');
               // console.log("title",title)

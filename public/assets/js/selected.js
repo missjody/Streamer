@@ -41,6 +41,7 @@ $(document).ready(function () {
     ///define data based on what is on the page
     let dataPass = {
       api_id: $(this).data("id"),
+      media_type: $(this).data("type"),
       poster_path: $(this).data("poster"),
       UserId: localStorage.getItem("user-id")
     };
@@ -72,6 +73,7 @@ $(document).ready(function () {
     ///define data based on what is on the page
     let dataPass = {
       api_id: $(this).data("id"),
+      media_type: $(this).data("type"),
       poster_path: $(this).data("poster"),
       UserId: localStorage.getItem("user-id")
     };
